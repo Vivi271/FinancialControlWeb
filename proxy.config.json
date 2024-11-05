@@ -1,7 +1,22 @@
 {
-"/api/usuarios":{
-"target": "http://localhost:3000",
-"secure": false,
-"changeOrigin": false
+    "/api/usuarios": {
+        "target": "http://localhost:3000",
+        "secure": false,
+        "changeOrigin": false
+    },
+    "/api/gastos": {
+        "target": "http://localhost:3000",
+        "secure": false,
+        "changeOrigin": false
+    },
+    "/api/costos": {
+        "target": "http://localhost:3000",
+        "secure": false,
+        "changeOrigin": false
+    },
+    "/api/ingresos": {
+        "target": "http://localhost:3000",
+        "secure": false,
+        "changeOrigin": false
     }
 }
