@@ -5,12 +5,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class UsuariosService {
-  apiUri = '/api/usuarios'; // Cambiar la URI a la de usuarios
+export class CostosService {
+  apiUri = '/api/costos'; // Cambiar la URI a la de costos
 
   constructor(private http: HttpClient) { }
 
-  getAllUsuariosData(): Observable<any> {
+  getAllCostosData(): Observable<any> {
     return this.http.get(this.apiUri, {
       headers: {
         'Content-Type': 'application/json'
@@ -18,20 +18,20 @@ export class UsuariosService {
     });
   }
 
-  getOneUsuario(id: any): Observable<any> {
+  getOneCosto(id: any): Observable<any> {
     return this.http.get<any>(this.apiUri + '/' + id);
   }
 
-  newUsuario(data: any): Observable<any> {
+  newCosto(data: any): Observable<any> {
     return this.http.post<any>(this.apiUri, data);
   }
 
-  updateUsuario(id: any, data: any): Observable<any> {
+  updateCosto(id: any, data: any): Observable<any> {
     console.log(data);
     return this.http.put<any>(this.apiUri + '/' + id, data);
   }
 
-  deleteUsuario(id: any) {
+  deleteCosto(id: any) {
     return this.http.delete<any>(this.apiUri + '/' + id);
   }
 }
