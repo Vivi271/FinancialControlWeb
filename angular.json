@@ -37,11 +37,11 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css", 
+              "src/assets/startbootstrap-sb-admin-2-gh-pages/css/sb-admin-2.min.css", 
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js" 
+              "src/assets/startbootstrap-sb-admin-2-gh-pages/js/sb-admin-2.min.js" 
             ],
             "server": "src/main.server.ts",
             "prerender": true,
