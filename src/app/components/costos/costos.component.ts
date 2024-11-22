@@ -7,6 +7,20 @@ import { CostosService } from '../../services/costos.service';
   styleUrl: './costos.component.css'
 })
 export class CostosComponent {
-    constructor(private cosotosService: CostosService){}
+  costosList: any = [];
+
+  constructor(private costosService: CostosService) { }
+  
+  ngOnInit() {
+    this.getAllCostos();
+  }
+
+
+  getAllCostos() {
+    this.costosService.getAllCostosData().subscribe((data: {}) => {
+      this.costosList = data;
+    });
+  }
+
 
 }
