@@ -34,4 +34,5 @@ export class GastosService {
   deleteGasto(id: any) {
     return this.http.delete<any>(this.apiUri + '/' + id);
   }
+  httpOptions = new HttpHeaders().set('Content-Type', 'application/json');
 }
