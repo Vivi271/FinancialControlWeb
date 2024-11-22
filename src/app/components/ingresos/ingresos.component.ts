@@ -7,6 +7,18 @@ import { IngresosService } from '../../services/ingresos.service';
   styleUrl: './ingresos.component.css'
 })
 export class IngresosComponent {
-  constructor(private ingresosService: IngresosService){}
+  ingresosList: any = [];
+  constructor(private ingresosService: IngresosService) { }
+
+  ngOnInit() {
+    this.getAllIngresos();
+  }
+
+  getAllIngresos() {
+    this.ingresosService.getAllIngresosData().subscribe((data: {}) => {
+      this.ingresosList = data;
+    });
+  }
+
 
 }

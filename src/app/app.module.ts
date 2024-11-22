@@ -10,6 +10,10 @@ import { CostosComponent } from './components/costos/costos.component';
 import { GastosComponent } from './components/gastos/gastos.component';
 import { IngresosComponent } from './components/ingresos/ingresos.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -22,7 +26,12 @@ import { UsuariosComponent } from './components/usuarios/usuarios.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    CommonModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()

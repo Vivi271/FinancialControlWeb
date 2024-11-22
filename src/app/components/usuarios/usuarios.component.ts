@@ -7,6 +7,19 @@ import { UsuariosService } from '../../services/usuarios.service';
   styleUrl: './usuarios.component.css'
 })
 export class UsuariosComponent {
-  constructor(private usuariosService: UsuariosService){}
+  usuariosList: any = [];
+  constructor(private usuariosService: UsuariosService) { }
+
+  ngOnInit() {
+    this.getAllUsuarios();
+  }
+
+
+  getAllUsuarios() {
+    this.usuariosService.getAllUsuariosData().subscribe((data: {}) => {
+      this.usuariosList = data;
+    });
+  }
+
 
 }
