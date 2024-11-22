@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GastosService } from '../../services/gastos.service';
 
 @Component({
   selector: 'app-gastos',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './gastos.component.css'
 })
 export class GastosComponent {
+  constructor(private gastosService: GastosService){}
 
 }

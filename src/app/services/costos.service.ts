@@ -8,6 +8,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class CostosService {
   apiUri = '/api/costos'; // Cambiar la URI a la de costos
 
+  httpOptions = new HttpHeaders().set('Content-Type', 'application/json');
+
   constructor(private http: HttpClient) { }
 
   getAllCostosData(): Observable<any> {
