@@ -14,6 +14,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { MenuComponent } from './components/menu/menu.component';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { LoginComponent } from './authentication/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { CommonModule } from '@angular/common';
     CostosComponent,
     GastosComponent,
     IngresosComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    MenuComponent,
+    InicioComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

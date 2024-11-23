@@ -3,6 +3,7 @@ import { CostosService } from '../../services/costos.service';
 
 @Component({
   selector: 'app-costos',
+  standalone: false,
   templateUrl: './costos.component.html',
   styleUrl: './costos.component.css'
 })
@@ -10,7 +11,7 @@ export class CostosComponent {
   costosList: any = [];
 
   constructor(private costosService: CostosService) { }
-  
+
   ngOnInit() {
     this.getAllCostos();
   }

@@ -6,12 +6,14 @@ import { GastosComponent } from './components/gastos/gastos.component';
 import { IngresosComponent } from './components/ingresos/ingresos.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import path from 'path';
+import { InicioComponent } from './components/inicio/inicio.component';
 
 const routes: Routes = [
   {path : 'costos', component:CostosComponent},
-  {path : 'costos', component:GastosComponent},
-  {path : 'costos', component:IngresosComponent},
-  {path : 'costos', component:UsuariosComponent},
+  {path : 'gastos', component:GastosComponent},
+  {path : 'ingresos', component:IngresosComponent},
+  {path : 'usuarios', component:UsuariosComponent},
+  {path : '', component:InicioComponent},
 ];
 
 @NgModule({
