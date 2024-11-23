@@ -30,7 +30,7 @@ import { SignupComponent } from './authentication/signup/signup.component';
     MenuComponent,
     InicioComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
